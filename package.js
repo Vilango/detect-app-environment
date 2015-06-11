@@ -1,8 +1,9 @@
 Package.describe({
   name: 'vilango:detect-app-environment',
   summary: 'Detect and expose the app environment we are running in right now',
-  version: '1.0.0',
-  git: 'https://github.com/Vilango/detect-app-environment'
+  version: '1.0.1',
+  git: 'https://github.com/Vilango/detect-app-environment',
+  documentation: null
 });
 
 Package.onUse(function(api) {
@@ -15,6 +16,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('detect-app-environment');
+  api.use('vilango:detect-app-environment');
   api.addFiles('detect-app-environment-tests.coffee');
 });
