@@ -1,7 +1,7 @@
 Package.describe({
   name: 'vilango:detect-app-environment',
   summary: 'Detect and expose the app environment we are running in right now',
-  version: '1.0.5',
+  version: '1.0.6',
   git: 'https://github.com/Vilango/detect-app-environment',
   documentation: null
 });

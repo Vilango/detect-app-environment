@@ -1,5 +1,4 @@
 if typeof UI isnt "undefined"
-
   
   UI.registerHelper "isBrowserApp", ->
     Meteor.AppEnv.isBrowserApp()
@@ -16,3 +15,5 @@ if typeof UI isnt "undefined"
   UI.registerHelper "appEnv", ->
     Meteor.AppEnv.type()
 
+else
+  console.warn "detect-app-environment", "can't register helpers", "UI not found"
