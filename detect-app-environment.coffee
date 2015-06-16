@@ -14,7 +14,7 @@ AppEnv::isType = (type) ->
 
 # Helper Functions
 AppEnv::isBrowserApp = ->
-  @isType "browerApp"
+  @isType "browserApp"
 
 AppEnv::isDesktopApp = ->
   @isType "desktopApp"
@@ -33,7 +33,7 @@ AppEnv::detect = ->
     else if Meteor.isCordova
       return "smartPhoneApp"
     else
-      return "browerApp"
+      return "browserApp"
   )()
   @_deps.changed()
   return
